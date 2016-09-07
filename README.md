@@ -4,6 +4,8 @@ Lección 20 / Ejercicio 2
 Closures / Hoisting
 
 El código muestra el mensaje JS coders love its callbacks, mientras que el resultado debería ser JS developers love its closures.
+Esto es debido al fenónemo hoisting eleva la variable var feature = 'callbacks';  y le da el valor de undefined, lo que cumple
+con la condición de la estructura if y muestra el mensaje " JS coders love its callbacks".
 
 ```javascript
 var feature = 'closures'; 
