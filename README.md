@@ -20,8 +20,9 @@ var feature = 'closures';
 "JS coders love its callbacks"
 ```
 #Solución:
-La palabra reservada var de la variable local feature ='callbacks' es eliminada, lo cual la convierte en una
-variable global.
+La palabra reservada var de la variable local feature ='callbacks' es eliminada, lo cual la convierte en una variable global.
+El hoisting prioriza las variables locales y al no encontrar ninguna, entonces toma el valor del la primera variable
+global: var feature = 'closures';  y ejecuta el else, mostrando finalmente el mensaje: "JS developers love its closures".
 
 ```javascript
 var feature = 'closures'; 
